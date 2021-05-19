@@ -7,12 +7,15 @@ import Input from './components/todoInput';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
+	const style = {
+		background: context.state.color,
+	};
 
 	return (
-		<div className="App">
+		<div style={ style }className="App">
 			<div>input: { context.state.input }</div>
-			<div>{ SimpleButton() }</div>
 			<div>{ Input() }</div>
+			<div>{ SimpleButton() }</div>
 		</div>
 	);
 };

@@ -1,5 +1,5 @@
 const config = {
-	countStart: 0,
+	color: 'white',
 };
 
 export default config;
